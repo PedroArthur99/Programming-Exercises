@@ -1,0 +1,18 @@
+  
+Questão 3:
+
+O que mudou na prática, quando promocao deixou de ser uma variável de classe e se tornou uma variável de objeto? 
+Semanticamente, para este exemplo, qual o efeito prático de promocao ser uma variável de classe ou de objeto? 
+(explique como se você fosse o dono da concessionária explicando para seus clientes como funciona a promoção)
+
+Na prática, o que aconteceu foi que a variável "promocao" passou a só poder ser acessada a partir do momento que instanciamos o objeto.
+Antes, quando o a variável era de classe, podíamos chamar a variável sem criar o objeto, usando o nome da classe.promocao. 
+
+O efeito prático, pra quem for o dono (no caso, eu) seria o seguinte:
+ - Se em alguma ocasião, eu tiver uma promoção em toda a minha loja, eu poderia simplesmente declarar a variável como sendo estática, e
+ torná-la "true" antes de instanciar adicionar qualquer carro ao meu menu. Feito isso, eu terei acesso aos meus carros já com os valores 
+ promocionais.
+ 
+ - O outro cenário seria nas situações em que preciso queimar preço de alguns veículos para vendê-los logo. Aqui, eu prefiro que a variável
+ seja de instância, porque quero ter meus carros com valores normais no sistema, modificando apenas os que eu quero adicionar à promoção, 
+ de maneira manual, acessando o seu atributo após a instaciação do objeto.
