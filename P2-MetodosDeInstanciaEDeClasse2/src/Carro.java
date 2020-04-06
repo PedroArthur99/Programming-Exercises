@@ -9,6 +9,7 @@ public class Carro {
 	public boolean cambioAutomatico;
 	public boolean direcaoEletrica;
 	public double precoBase;
+	public boolean promocao;
 	
 	public Carro (String nome, String marca, double precoBase) {
 		this.nome = nome;
@@ -73,6 +74,9 @@ public class Carro {
 			precoinicial += 1250;
 		}
 		this.precoBase += precoinicial;
+		if (promocao == true) {
+			precoBase -= precoBase * 10 / 100;
+		}
 		return this.precoBase;
 	}
 	
@@ -91,15 +95,4 @@ public class Carro {
 		
 		return aux;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
