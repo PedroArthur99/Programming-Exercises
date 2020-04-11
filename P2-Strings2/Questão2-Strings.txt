@@ -1,0 +1,18 @@
+Programação II;
+Atividade - Strings
+
+Questão 2)
+Explique qual a diferença entre criar uma String das seguintes formas:
+- String nome = "Eduardo";
+- String nome = new String("Eduardo");
+
+Resposta:
+
+A diferença seria basicamente que, na primeira opção, estamos criando uma 
+variável, do tipo String, que armazena o valor "Eduardo", e está armazenada 
+na parte da memória chamada Stack.
+Criando a String da segunda maneira, não estamos apenas criando uma variável,
+mas sim, estamos instanciando um objeto, através de um construtor da classe
+String, e dentro desse construtor passamos um argumento que será o valor 
+para o atributo dessa classe. O objeto está armazenado na parte
+da memória chamada Heap.
