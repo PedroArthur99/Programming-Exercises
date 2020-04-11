@@ -1,0 +1,13 @@
+Programação II;
+Atividade - Strings
+
+Questão 5)
+Como a classe StringBuilder pode ajudar a tornar o código anterior mais eficiente?
+
+Resposta:
+
+Utilizando a classe StringBuilder, o problema acima seria resolvido, pois
+ao contrário da classe String, essa é mutável, ou seja, sempre que a variável
+for atualizada (ter o seu valor alterado), na memória, a variável é atualizada
+no mesmo endereço, economizando memória. No caso do exemplo da questão 4, ao fim
+dele, teríamos apenas uma variável, armazendo o valor de "Eduardo de Lucena Falcao".

@@ -1,0 +1,17 @@
+Programação II;
+Atividade - Strings
+
+Questão 4)
+O que acontece toda vez que uma String é modificada? 
+Considere o exemplo a seguir para embasar sua resposta.
+
+String nome = "Eduardo";
+nome += "de Lucena";
+nome += "Falcao";
+
+Resposta:
+O que aconteceria, é que a JVM iria criar uma nova variável para cada
+alteração feita na String nome. Nesse caso, teríamos um total de 3 variáveis
+diferentes na memória, e as anteriores só serão removidas quando o Garbage
+Collector for usado. Isso acontece porque os objetos do tipo String são 
+imutáveis.

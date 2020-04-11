@@ -1,0 +1,16 @@
+Programação II;
+Atividade - Strings
+
+Questão 3)
+Explique como funciona o String pool.
+
+Resposta:
+O StringPool funciona tentando guardar mais espaço para a JVM. Ela faz isso
+quando tentamos instanciar objetos do tipo String sem usar a palavra "new". 
+Quando fazemos isso, a StringPool verifica se já existe algum objeto com 
+o mesmo valor armazenado, se sim, ela não permite a criação de um novo objeto
+para aquele valor, ela simplesmente  copia o endereço do objeto ja existente e
+armazena na nova variável, seria como se fossem o mesmo objeto. O contrário 
+acontece quando instanciamos usando a palavra "new", pois a JVM, independentemente
+de haver ou não objetos com mesmo valor, irá criar um novo objeto, com um novo 
+endereço, claro.
