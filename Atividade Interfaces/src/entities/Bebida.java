@@ -4,7 +4,7 @@ import enums.SaborBebida;
 import enums.Tamanho;
 import interfaces.Item;
 
-public class Bebida implements Item{
+public class abstract Bebida{
 		
 	private Tamanho tamanho;
 	private SaborBebida sabor;
