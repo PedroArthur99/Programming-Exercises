@@ -3,8 +3,9 @@ package entities;
 import enums.SaborBebida;
 import enums.Tamanho;
 import interfaces.Item;
+import interfaces.Item;
 
-public class abstract Bebida{
+public class Bebida implements Item{
 		
 	private Tamanho tamanho;
 	private SaborBebida sabor;
